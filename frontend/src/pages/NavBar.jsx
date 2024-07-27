@@ -60,7 +60,6 @@ function SocialBar() {
           />
         </div>
       </div>
-      LinkedIn icon
     </div>
   );
 }

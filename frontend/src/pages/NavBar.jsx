@@ -40,11 +40,27 @@ function SocialBar() {
           </div>
         </div>
         <div className="flex items-center ">
-          <img src="instagram.png" alt="Instagram" className="w-8 h-8 " />
-          <img src="x.png" alt="Twitter" className="w-8 h-8  " />
-          <img src="github.png" alt="GitHub" className="w-8 h-8 " />
+          <img
+            src="Linkedin.png"
+            alt="Linkedin"
+            href="https://www.linkedin.com/in/yash-kelhe-a07a09245/"
+            className="w-8 h-8 "
+          />
+          <img
+            src="x.png"
+            alt="Twitter"
+            href="https://x.com/YashKelhe1"
+            className="w-8 h-8  "
+          />
+          <img
+            src="github.png"
+            alt="GitHub"
+            href="https://github.com/yashkelhe"
+            className="w-8 h-8 "
+          />
         </div>
       </div>
+      LinkedIn icon
     </div>
   );
 }

@@ -40,13 +40,9 @@ function SocialBar() {
           </div>
         </div>
         <div className="flex items-center ">
-          <img
-            src="/src/assets/instagram.png"
-            alt="Instagram"
-            className="w-8 h-8 "
-          />
-          <img src="/src/assets/x.png" alt="Twitter" className="w-8 h-8  " />
-          <img src="/src/assets/github.png" alt="GitHub" className="w-8 h-8 " />
+          <img src="instagram.png" alt="Instagram" className="w-8 h-8 " />
+          <img src="x.png" alt="Twitter" className="w-8 h-8  " />
+          <img src="github.png" alt="GitHub" className="w-8 h-8 " />
         </div>
       </div>
     </div>
@@ -154,7 +150,7 @@ function NavBar() {
           <div className="relative p-4 pr-5">
             <img
               className="h-7 w-7 cursor-pointer"
-              src="/src/assets/social.png"
+              src="social.png"
               alt="Social"
               onClick={() => setShowSocialBar(!showSocialBar)}
               ref={socialIconRef}

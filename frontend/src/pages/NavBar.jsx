@@ -9,26 +9,26 @@ function SocialBar() {
           <div
             className="p-1  "
             onClick={() => {
-              navigate("/");
-            }}
-          >
-            Home
-          </div>
-          <div
-            className="p-1  "
-            onClick={() => {
-              navigate("/about");
+              navigate("/About");
             }}
           >
             About
           </div>
           <div
-            className="p-1"
+            className="p-1  "
             onClick={() => {
               navigate("/experience");
             }}
           >
             experience
+          </div>
+          <div
+            className="p-1"
+            onClick={() => {
+              navigate("/research-paper");
+            }}
+          >
+            Research Paper
           </div>
           <div
             className="p-1"
@@ -61,7 +61,7 @@ function NavBar() {
   const socialIconRef = useRef(null);
 
   const handleScroll = () => {
-    if (window.scrollY > 500) {
+    if (window.scrollY > 550) {
       setIsScrolled(true);
     } else {
       setIsScrolled(false);
@@ -93,27 +93,39 @@ function NavBar() {
       <div
         className={`fixed flex justify-between items-center text-white font-semibold transition-all duration-500  ${
           isScrolled
-            ? "w-[50%] sm:w-[70%] md:w-[50%] lg:w-[40%] xl:w-[30%] pl-2 justify-evenly bg-slate-900 rounded-3xl mx-auto left-0 right-0"
+            ? "w-[50%] sm:w-[70%] md:w-[50%] lg:w-[40%] xl:w-[35%] pl-2 justify-evenly bg-slate-900 rounded-3xl mx-auto left-0 right-0"
             : "w-screen px-2 bg-slate-900"
         }`}
       >
-        <div className={`p-4 ${isScrolled ? "" : ""} `}>logo</div>
-        <div className="flex justify-between items-center space-x-4 sm:space-x-6">
-          <div
-            className="py-4 hidden md:block"
-            onClick={() => {
-              navigate("/");
-            }}
+        <div
+          className={`p-4 ${isScrolled ? "" : ""} `}
+          onClick={() => {
+            navigate("/");
+          }}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6 text-white w-8 h-8"
           >
-            Home
-          </div>
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"
+            />
+          </svg>
+        </div>
+        <div className="flex justify-between items-center space-x-4 sm:space-x-6">
           <div
             className="py-4 hidden md:block"
             onClick={() => {
               navigate("/about");
             }}
           >
-            about
+            About
           </div>
           <div
             className="py-4 hidden md:block"
@@ -122,6 +134,14 @@ function NavBar() {
             }}
           >
             experience
+          </div>
+          <div
+            className="py-4 hidden md:block"
+            onClick={() => {
+              navigate("/research-Paper");
+            }}
+          >
+            Research Paper
           </div>
           <div
             className="py-4 hidden md:block"

@@ -1,6 +1,6 @@
 import React from "react";
 
-function Experience() {
+function ResearchPaper() {
   return (
     <div className="w-screen h-screen flex items-center justify-center bg-[#0e1630]">
       <div className="border border-gray-800 bg-gray-900 text-green-500 font-mono text-sm p-6 w-72  mx-auto shadow-md rounded-lg relative overflow-hidden box-border">
@@ -13,11 +13,11 @@ function Experience() {
           </div>
         </div>
         <div className="text mt-6 overflow-hidden border-r-2 border-green-500 whitespace-nowrap">
-          added soon...
+          Loading...
         </div>
       </div>
     </div>
   );
 }
 
-export default Experience;
+export default ResearchPaper;

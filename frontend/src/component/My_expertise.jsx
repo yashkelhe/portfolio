@@ -1,4 +1,5 @@
 import React from "react";
+import IndexProject from "./IndexProject";
 
 function My_expertise() {
   return (
@@ -130,6 +131,7 @@ function My_expertise() {
           </div>
         </div>
       </div>
+      <IndexProject />
     </div>
   );
 }

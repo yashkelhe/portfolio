@@ -1,12 +1,12 @@
 import React from "react";
-
+import "./Slider.css";
 function HomePage() {
   return (
-    <div className="h-screen pt-16 bg-custom-radial-gradient flex flex-col items-center">
-      <div className="grid grid-cols-1 lg:grid-cols-12 sm:grid-cols-2 w-full px-4 py-20 lg:px-0">
-        <div className="lg:col-span-8 sm:col-span-1 flex flex-col justify-center items-start text-center  lg:text-left pt-10 lg:pt-0 lg:pl-48 pl-4 order-2  sm:order-1 md:order-1 lg:order-1">
+    <div className="h-screen pt-16 bg-custom-radial-gradient flex flex-col items-center ">
+      <div className="grid grid-cols-1 lg:grid-cols-12 sm:grid-cols-2 w-full px-4 py-20 lg:px-0 ">
+        <div className="lg:col-span-8 sm:col-span-1 flex flex-col justify-center items-start text-center  lg:text-left pt-10 lg:pt-0 lg:pl-48 pl-4 order-2  sm:order-1 md:order-1 lg:order-1 slide-in-bottom">
           <div className="text-xl lg:text-4xl my-10 lg:mt-16 ">
-            <div className="text-[#01D293] shadow-2xl shadow-indigo-500/50">
+            <div className="text-[#01D293] shadow-2xl shadow-indigo-500/50 ">
               ---Hello
             </div>
           </div>
@@ -16,7 +16,7 @@ function HomePage() {
           <div className="text-1xl lg:text-xl text-[#808DAD]">
             Full stack dev
           </div>
-          <p className="text-lg lg:text-xl mt-4 pr-4 text-[#808DAD] text-start ">
+          <p className="text-lg lg:text-xl mt-4 pr-4 text-[#808DAD] text-start  lg:pr-40  ">
             Hi there! My name is Yash Kelhe, and I’m a software engineer with a
             passion for all things tech and coding. I'm eager to apply my Full
             Stack Development skills to bring creative solutions to life and
@@ -31,8 +31,12 @@ function HomePage() {
             </button>
           </div>
         </div>
-        <div className="lg:col-span-3 sm:col-span-1  flex rounded-full justify-center items-center order-1  lg:order-2 md:order-2 sm:order-2 mt-8 lg:mt-0 ">
-          <img src="mee.png" alt="img" className="w-2/3 lg:w-full " />
+        <div className=" lg:col-span-3 sm:col-span-1  flex rounded-full justify-center items-center order-1  lg:order-2 md:order-2 sm:order-2 mt-8 lg:mt-0 slide-in-bottom ">
+          <img
+            src="mee.png"
+            alt="img"
+            className="w-2/3 lg:w-full rounded-full"
+          />
         </div>
       </div>
     </div>

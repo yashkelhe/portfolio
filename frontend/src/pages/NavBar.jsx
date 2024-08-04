@@ -5,7 +5,7 @@ function SocialBar() {
   return (
     <div className="absolute top-full right-5 bg-gray-400 p-1  rounded-lg shadow-lg mt-2  ">
       <div className="flex flex-col items-center space-y-2 w-24">
-        <div className="p-1 shadow-md bg-[#0e1630] rounded-md md:hidden">
+        <div className="p-1 shadow-md bg-[#0e1630] rounded-md md:hidden transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300">
           <div
             className="p-1  "
             onClick={() => {
@@ -44,19 +44,19 @@ function SocialBar() {
             src="Linkedin.png"
             alt="Linkedin"
             href="https://www.linkedin.com/in/yash-kelhe-a07a09245/"
-            className="w-8 h-8 "
+            className="w-8 h-8 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300 "
           />
           <img
             src="x.png"
             alt="Twitter"
             href="https://x.com/YashKelhe1"
-            className="w-8 h-8  "
+            className="w-8 h-8 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300 "
           />
           <img
             src="github.png"
             alt="GitHub"
             href="https://github.com/yashkelhe"
-            className="w-8 h-8 "
+            className="w-8 h-8 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300 "
           />
         </div>
       </div>
@@ -102,14 +102,16 @@ function NavBar() {
   return (
     <div>
       <div
-        className={`fixed flex justify-between items-center text-white font-semibold transition-all duration-500  ${
+        className={`fixed flex justify-between items-center text-white font-semibold transition-all duration-500 backdrop-blur shadow-custom  border-custom  ${
           isScrolled
             ? "w-[50%] sm:w-[70%] md:w-[50%] lg:w-[40%] xl:w-[35%] pl-2 justify-evenly bg-slate-900 rounded-3xl mx-auto left-0 right-0"
             : "w-screen px-2 bg-slate-900"
         }`}
       >
         <div
-          className={`p-4 ${isScrolled ? "" : ""} `}
+          className={`p-4 ${
+            isScrolled ? "" : ""
+          } transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300`}
           onClick={() => {
             navigate("/");
           }}
@@ -129,9 +131,9 @@ function NavBar() {
             />
           </svg>
         </div>
-        <div className="flex justify-between items-center space-x-4 sm:space-x-6">
+        <div className="flex justify-between items-center space-x-4 sm:space-x-6 ">
           <div
-            className="py-4 hidden md:block"
+            className="py-4 hidden md:block transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300"
             onClick={() => {
               navigate("/about");
             }}
@@ -139,7 +141,7 @@ function NavBar() {
             About
           </div>
           <div
-            className="py-4 hidden md:block"
+            className="py-4 hidden md:block transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300"
             onClick={() => {
               navigate("/experience");
             }}
@@ -147,7 +149,7 @@ function NavBar() {
             experience
           </div>
           <div
-            className="py-4 hidden md:block"
+            className="py-4 hidden md:block transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300"
             onClick={() => {
               navigate("/research-Paper");
             }}
@@ -155,7 +157,7 @@ function NavBar() {
             Research Paper
           </div>
           <div
-            className="py-4 hidden md:block"
+            className="py-4 hidden md:block transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300"
             onClick={() => {
               navigate("/projects");
             }}
@@ -164,7 +166,7 @@ function NavBar() {
           </div>
           <div className="relative p-4 pr-5">
             <img
-              className="h-7 w-7 cursor-pointer"
+              className="h-7 w-7 cursor-pointer transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300"
               src="social.png"
               alt="Social"
               onClick={() => setShowSocialBar(!showSocialBar)}

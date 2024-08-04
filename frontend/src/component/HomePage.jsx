@@ -10,11 +10,15 @@ function HomePage() {
               ---Hello
             </div>
           </div>
-          <div className=" text-3xl sm:pl-0 my-4 text-white shadow-2xl shadow-indigo-500/40">
-            I'm Yash Kelhe,
+          <div className=" text-3xl sm:pl-0 my-4 text-white shadow-2xl shadow-indigo-500/40 ">
+            I'm Yash Kelhe
           </div>
-          <div className="text-1xl lg:text-xl text-[#808DAD]">
-            Full stack dev
+          <div className="text-1xl lg:text-xl text-[#808DAD] flex">
+            Full stack dev{" "}
+            <span class="relative flex h-3 w-3">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-green-300"></span>
+            </span>{" "}
           </div>
           <p className="text-lg lg:text-xl mt-4 pr-4 text-[#808DAD] text-start  lg:pr-40  ">
             Hi there! My name is Yash Kelhe, and I’m a software engineer with a

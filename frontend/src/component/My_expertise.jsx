@@ -8,7 +8,7 @@ function My_expertise() {
         MY Expertise
       </div>
       <div className="grid grid-cols-12 gap-3 mt-28  ">
-        <div className="col-span-3 w-full h-72 shadow-lg shadow-indigo-500/50 p-5">
+        <div className="col-span-3 w-full h-72 shadow-lg shadow-indigo-500/50 p-5 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300">
           <div className="flex flex-col ">
             <div>
               {/* <img src="front-end.png" alt="" className="w-10 h-10 bg-white" /> */}
@@ -36,7 +36,7 @@ function My_expertise() {
             </div>
           </div>
         </div>
-        <div className="col-span-3 w-full h-72 shadow-lg shadow-indigo-500/50 p-5">
+        <div className="col-span-3 w-full h-72 shadow-lg shadow-indigo-500/50 p-5 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-200">
           <div className="flex flex-col ">
             <div>
               {/* <img src="front-end.png" alt="" className="w-10 h-10 bg-white" /> */}
@@ -68,7 +68,7 @@ function My_expertise() {
             </div>
           </div>
         </div>
-        <div className="col-span-3 w-full h-72 shadow-lg shadow-indigo-500/50 p-5">
+        <div className="col-span-3 w-full h-72 shadow-lg shadow-indigo-500/50 p-5 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300">
           <div className="flex flex-col ">
             <div>
               {/* <img src="front-end.png" alt="" className="w-10 h-10 bg-white" /> */}
@@ -100,7 +100,7 @@ function My_expertise() {
             </div>
           </div>
         </div>
-        <div className="col-span-3 w-full h-72 shadow-lg shadow-indigo-500/50 p-5">
+        <div className="col-span-3 w-full h-72 shadow-lg shadow-indigo-500/50 p-5 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300  ">
           <div className="flex flex-col ">
             <div>
               {/* <img src="front-end.png" alt="" className="w-10 h-10 bg-white" /> */}

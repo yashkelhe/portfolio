@@ -10,6 +10,7 @@ function Hero() {
       <HomePage />
 
       <My_expertise />
+
       <WallOfFrame />
 
       <Footor />

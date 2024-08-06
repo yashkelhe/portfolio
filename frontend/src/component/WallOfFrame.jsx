@@ -2,7 +2,7 @@ import React from "react";
 
 function WallOfFrame() {
   return (
-    <div className="w-screen h-screen bg-custom-radial-gradient  p-10   ">
+    <div className=" w-screen h-[130vh]  sm:h-screen bg-custom-radial-gradient  sm:p-10 pt-[80%] p-10  ">
       <div className=" p-5 bg-custom-abuot-color h-[95%] rounded-2xl">
         <div className="grid grid-cols-12 gap-3 ">
           <div className="col-span-4 bg-white w-[90%]  h-80">big box</div>

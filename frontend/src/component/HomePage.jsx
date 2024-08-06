@@ -2,7 +2,7 @@ import React from "react";
 import "./Slider.css";
 function HomePage() {
   return (
-    <div className="h-screen pt-16 bg-custom-radial-gradient flex flex-col items-center ">
+    <div className="h-[130vh] sm:h-screen pt-16 bg-custom-radial-gradient flex flex-col items-center ">
       <div className="grid grid-cols-1 lg:grid-cols-12 sm:grid-cols-2 w-full px-4 py-20 lg:px-0 ">
         <div className="lg:col-span-8 sm:col-span-1 flex flex-col justify-center items-start text-center  lg:text-left pt-10 lg:pt-0 lg:pl-48 pl-4 order-2  sm:order-1 md:order-1 lg:order-1 slide-in-bottom">
           <div className="text-xl lg:text-4xl my-10 lg:mt-16 ">

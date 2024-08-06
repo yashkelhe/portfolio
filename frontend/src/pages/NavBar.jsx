@@ -5,9 +5,9 @@ function SocialBar() {
   return (
     <div className="absolute top-full right-5 bg-gray-400 p-1  rounded-lg shadow-lg mt-2  ">
       <div className="flex flex-col items-center space-y-2 w-24">
-        <div className="p-1 shadow-md bg-[#0e1630] rounded-md md:hidden transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300">
+        <div className="p-1 shadow-md bg-[#0e1630] rounded-md md:hidden ">
           <div
-            className="p-1  "
+            className="p-1 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300 "
             onClick={() => {
               navigate("/About");
             }}
@@ -15,7 +15,7 @@ function SocialBar() {
             About
           </div>
           <div
-            className="p-1  "
+            className="p-1 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300  "
             onClick={() => {
               navigate("/experience");
             }}
@@ -23,7 +23,7 @@ function SocialBar() {
             experience
           </div>
           <div
-            className="p-1"
+            className="p-1 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300"
             onClick={() => {
               navigate("/research-paper");
             }}
@@ -31,7 +31,7 @@ function SocialBar() {
             Research Paper
           </div>
           <div
-            className="p-1"
+            className="p-1 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300"
             onClick={() => {
               navigate("/projects");
             }}
@@ -40,24 +40,30 @@ function SocialBar() {
           </div>
         </div>
         <div className="flex items-center ">
-          <img
-            src="Linkedin.png"
-            alt="Linkedin"
-            href="https://www.linkedin.com/in/yash-kelhe-a07a09245/"
-            className="w-8 h-8 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300 "
-          />
-          <img
-            src="x.png"
-            alt="Twitter"
-            href="https://x.com/YashKelhe1"
-            className="w-8 h-8 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300 "
-          />
-          <img
-            src="github.png"
-            alt="GitHub"
-            href="https://github.com/yashkelhe"
-            className="w-8 h-8 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300 "
-          />
+          <a href="https://www.linkedin.com/in/yash-kelhe-a07a09245/">
+            <img
+              src="Linkedin.png"
+              alt="Linkedin"
+              href="https://www.linkedin.com/in/yash-kelhe-a07a09245/"
+              className="w-8 h-8 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300 "
+            />
+          </a>
+          <a href="https://x.com/YashKelhe1">
+            <img
+              src="x.png"
+              alt="Twitter"
+              href="https://x.com/YashKelhe1"
+              className="w-8 h-8 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300 "
+            />
+          </a>
+          <a href="https://github.com/yashkelhe">
+            <img
+              src="github.png"
+              alt="GitHub"
+              href="https://github.com/yashkelhe"
+              className="w-8 h-8 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300 "
+            />
+          </a>
         </div>
       </div>
     </div>

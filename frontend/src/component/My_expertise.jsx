@@ -1,14 +1,38 @@
+import { useEffect, useRef } from "react";
 import React from "react";
 import IndexProject from "./IndexProject";
+import { motion, useInView, useAnimation } from "framer-motion";
 
 function My_expertise() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+  const mainControl = useAnimation();
+
+  useEffect(() => {
+    if (isInView) {
+      mainControl.start("visible");
+    }
+  }, [isInView, mainControl]);
+
   return (
-    <div className="bg-custom-radial-gradient flex flex-col  h-screen px-48">
+    <div
+      ref={ref}
+      className="bg-custom-radial-gradient flex flex-col h-screen sm:h-screen sm:px-48 px-8 "
+    >
       <div className="text-green-400 text-4xl mt-28 shadow-2xl w-52 shadow-indigo-500/50">
         MY Expertise
       </div>
-      <div className="grid grid-cols-12 gap-3 mt-28  ">
-        <div className="col-span-3 w-full h-72 shadow-lg shadow-indigo-500/50 p-5 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300">
+      <motion.div
+        initial="hidden"
+        animate={mainControl}
+        transition={{ duration: 0.5, delay: 0.25 }}
+        variants={{
+          hidden: { opacity: 0, y: 75 },
+          visible: { opacity: 1, y: 0 },
+        }}
+        className="grid lg:grid-cols-12 md:grid-cols-8  grid-cols-8 gap-3 mt-28"
+      >
+        <div className="col-span-4  sm:col-span-3 w-full h-80 shadow-lg shadow-indigo-500/50 sm:p-5 p-4 text-wrap transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
           <div className="flex flex-col ">
             <div>
               {/* <img src="front-end.png" alt="" className="w-10 h-10 bg-white" /> */}
@@ -18,7 +42,7 @@ function My_expertise() {
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                className="size-6 text-white  w-8  h-8 "
+                className="size-6 text-white w-8 h-8"
               >
                 <path
                   stroke-linecap="round"
@@ -27,7 +51,7 @@ function My_expertise() {
                 />
               </svg>
             </div>
-            <div className="text-white text-xl pt-3 ">Front-End Dev</div>
+            <div className="text-white text-xl pt-3">Front-End Dev</div>
             <div className="pt-4 text-slate-300 text-sm">
               Experience with front-end frameworks/libraries like
               <span className="text-purple-500"> React</span>, Proficiency in
@@ -36,7 +60,7 @@ function My_expertise() {
             </div>
           </div>
         </div>
-        <div className="col-span-3 w-full h-72 shadow-lg shadow-indigo-500/50 p-5 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-200">
+        <div className="col-span-4  sm:col-span-3 w-full h-80  shadow-lg shadow-indigo-500/50 p-5 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-200">
           <div className="flex flex-col ">
             <div>
               {/* <img src="front-end.png" alt="" className="w-10 h-10 bg-white" /> */}
@@ -46,7 +70,7 @@ function My_expertise() {
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                className="size-6 text-white  w-8  h-8 "
+                className="size-6 text-white w-8 h-8"
               >
                 <path
                   stroke-linecap="round"
@@ -55,20 +79,19 @@ function My_expertise() {
                 />
               </svg>
             </div>
-            <div className="text-white text-xl pt-3 ">Back-End Dev</div>
+            <div className="text-white text-xl pt-3">Back-End Dev</div>
             <div className="pt-4 text-slate-300 text-sm">
-              Backend Developer with expertise in{" "}
               <span className="text-purple-500"> Nodejs</span>, leveraging{" "}
-              <span className="text-purple-500"> Zod </span>
-              for robust validation, and also{" "}
+              <span className="text-purple-500"> Zod</span> for robust
+              validation, and also{" "}
               <span className="text-purple-500"> Honojs</span> for efficient
               serverless applications, and
-              <span className="text-purple-500"> Cloudflare </span> for reliable
+              <span className="text-purple-500"> Cloudflare</span> for reliable
               deployment.
             </div>
           </div>
         </div>
-        <div className="col-span-3 w-full h-72 shadow-lg shadow-indigo-500/50 p-5 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300">
+        <div className="col-span-4  sm:col-span-3 w-full h-80  shadow-lg shadow-indigo-500/50 p-5 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
           <div className="flex flex-col ">
             <div>
               {/* <img src="front-end.png" alt="" className="w-10 h-10 bg-white" /> */}
@@ -78,7 +101,7 @@ function My_expertise() {
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                className="size-6 text-white  w-8  h-8"
+                className="size-6 text-white w-8 h-8"
               >
                 <path
                   stroke-linecap="round"
@@ -87,20 +110,16 @@ function My_expertise() {
                 />
               </svg>
             </div>
-            <div className="text-white text-xl pt-3 ">DataBase & State </div>
+            <div className="text-white text-xl pt-3">Database Management</div>
             <div className="pt-4 text-slate-300 text-sm">
-              Experienced in database management with{" "}
-              <span className="text-purple-500"> MongoDB </span>,{" "}
-              <span className="text-purple-500"> PostgreSQL</span> using{" "}
-              <span className="text-purple-500"> Prisma ORM</span>, and{" "}
-              <span className="text-purple-500"> SQL</span>. Proficient in state
-              management with <span className="text-purple-500"> Recoil </span>
-              and <span className="text-purple-500"> Context API </span>
-              for efficient and scalable data handling.
+              Database manager leveraging{" "}
+              <span className="text-purple-500"> MongoDB</span> for NoSQL,
+              <span className="text-purple-500"> Prisma ORM</span> for seamless
+              interaction with PostgreSQL, and
             </div>
           </div>
         </div>
-        <div className="col-span-3 w-full h-72 shadow-lg shadow-indigo-500/50 p-5 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300  ">
+        <div className="col-span-4  sm:col-span-3 w-full h-80 shadow-lg shadow-indigo-500/50 p-5 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300  ">
           <div className="flex flex-col ">
             <div>
               {/* <img src="front-end.png" alt="" className="w-10 h-10 bg-white" /> */}
@@ -125,12 +144,11 @@ function My_expertise() {
             <div className="pt-4 text-slate-300 text-sm">
               Proficient in version control using{" "}
               <span className="text-purple-500">GitHub</span> for efficient code
-              management, collaboration, and tracking changes through commits,
-              branches, and pull requests.
+              management, collaboration
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
       <IndexProject />
     </div>
   );

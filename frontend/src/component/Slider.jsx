@@ -1,7 +1,7 @@
 import React from "react";
 import "./Slider.css";
 
-const IndexProject = () => {
+const Slider = () => {
   return (
     <div className="flex justify-center items-center mt-5  ">
       <div className="relative flex w-[100%] overflow-hidden">
@@ -88,4 +88,4 @@ const IndexProject = () => {
   );
 };
 
-export default IndexProject;
+export default Slider;

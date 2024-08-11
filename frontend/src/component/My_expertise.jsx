@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import React from "react";
-import IndexProject from "./IndexProject";
+import Slider from "./Slider.jsx";
 import { motion, useInView, useAnimation } from "framer-motion";
 
 function My_expertise() {
@@ -17,7 +17,7 @@ function My_expertise() {
   return (
     <div
       ref={ref}
-      className="bg-custom-radial-gradient flex flex-col h-screen sm:h-screen sm:px-48 px-8 "
+      className="bg-custom-radial-gradient flex flex-col h-[1100px] sm:h-[800px] sm:px-48 px-8  "
     >
       <div className="text-green-400 text-4xl mt-28 shadow-2xl w-52 shadow-indigo-500/50">
         MY Expertise
@@ -149,7 +149,7 @@ function My_expertise() {
           </div>
         </div>
       </motion.div>
-      <IndexProject />
+      <Slider />
     </div>
   );
 }

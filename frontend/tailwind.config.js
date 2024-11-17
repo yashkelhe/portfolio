@@ -2,6 +2,15 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        roboto: "Matemasie",
+        roboto1: "New Amsterdam",
+        roboto2: "Bodoni Moda SC",
+        roboto3: "Playwrite France Moderne",
+        roboto4: "Raleway",
+        Bungee: "Bungee Tint",
+        Kanit: "Kanit",
+      },
       colors: {
         customPurple: "rgb(18, 7, 45)",
         customBlack: "#000000",

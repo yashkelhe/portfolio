@@ -1,45 +1,68 @@
 import React from "react";
+
+import { motion } from "framer-motion";
+
 import "./Slider.css";
 function HomePage() {
   return (
     <div className="h-[130vh] sm:h-screen pt-16 bg-custom-radial-gradient flex flex-col items-center ">
       <div className="grid grid-cols-1 lg:grid-cols-12 sm:grid-cols-2 w-full px-4 py-20 lg:px-0 ">
-        <div className="lg:col-span-8 sm:col-span-1 flex flex-col justify-center items-start text-center  lg:text-left pt-10 lg:pt-0 lg:pl-48 pl-4 order-2  sm:order-1 md:order-1 lg:order-1 slide-in-bottom">
-          <div className="text-xl lg:text-4xl my-10 lg:mt-16 ">
-            <div className="text-[#01D293] shadow-2xl shadow-indigo-500/50 ">
-              ---Hello
+        <div className="lg:col-span-8 sm:col-span-1 flex flex-col justify-center items-start text-center  lg:text-left pt-10 lg:pt-0 lg:pl-24 pl-4 order-2  sm:order-1 md:order-1 lg:order-1 slide-in-bottom">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="text-xl lg:text-4xl my-10 lg:mt-16 "
+          >
+            <div
+              className="text-[#01D293] shadow-2xl shadow-indigo-500/50 "
+              style={{ fontFamily: "Anton" }}
+            >
+              <span>---</span> Hello
             </div>
-          </div>
-          <div className=" text-3xl sm:pl-0 my-4 text-white shadow-2xl shadow-indigo-500/40 ">
-            I'm Yash Kelhe
-          </div>
-          <div className="text-1xl lg:text-xl text-[#808DAD] flex">
-            Full stack dev{" "}
-            <span class="relative flex h-3 w-3">
-              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
-              <span class="relative inline-flex rounded-full h-2 w-2 bg-green-300"></span>
-            </span>{" "}
-          </div>
-          <p className="text-lg lg:text-xl mt-4 pr-4 text-[#808DAD] text-start  lg:pr-40  ">
-            Hi there! My name is Yash Kelhe, and I’m a software engineer with a
-            passion for all things tech and coding. I'm eager to apply my Full
-            Stack Development skills to bring creative solutions to life and
-            make a meaningful impact in the tech industry..
-          </p>
-          <div className="py-16">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="text-white text-[48px]"
+            style={{ fontFamily: "Anton" }}
+          >
+            This is <span className="text-pink-400">Yash Kelhe</span>, I'm a
+            <br /> Professional{" "}
+            <span className="text-green-400">
+              Software
+              <br /> Developer
+            </span>
+            .
+          </motion.div>
+          <div className="mt-6">
             <button
               type="button"
-              className="text-gray-900 bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-tr hover:via-blue-300 hover:to-purple-800 focus:ring-4 focus:outline-none focus:ring-red-100  font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 transform active:scale-95 hover:scale-105 shadow-2xl shadow-indigo-500/50"
+              className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-2 focus:outline-none focus:ring-blue-300  dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 "
             >
-              explore more
+              Contect Me
+            </button>
+            <button
+              onClick={() =>
+                window.open(
+                  "https://drive.google.com/file/d/1Su169TerWzy5qGB8IqZQG67SV3cMVcrb/view?usp=sharing",
+                  "_blank"
+                )
+              }
+              className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium   rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-2 focus:outline-none focus:ring-cyan-100 dark:focus:ring-cyan-800"
+            >
+              <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                Resume
+              </span>
             </button>
           </div>
         </div>
-        <div className=" lg:col-span-3 sm:col-span-1  flex rounded-full justify-center items-center order-1  lg:order-2 md:order-2 sm:order-2 mt-8 lg:mt-0 slide-in-bottom ">
+        <div className=" lg:col-span-3 sm:col-span-1  flex  justify-center items-center order-1  lg:order-2 md:order-2 sm:order-2 mt-8 lg:mt-0 slide-in-bottom ">
           <img
-            src="mee.png"
+            src="HomeImage.jpg"
             alt="img"
-            className="w-2/3 lg:w-full rounded-full"
+            className="w-96 h-80 slg:w-full rounded-md"
           />
         </div>
       </div>

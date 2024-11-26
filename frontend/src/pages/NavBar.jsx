@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 function SocialBar() {
   const navigate = useNavigate();
   return (
-    <div className="absolute top-full right-5 bg-gray-400 p-1  rounded-lg shadow-lg mt-2  ">
+    <div className="absolute top-full right-5 bg-gray-400 p-1  rounded-lg shadow-lg mt-2  backdrop-blur  z-50">
       <div className="flex flex-col items-center space-y-2 w-24">
         <div className="p-1 shadow-md bg-[#0e1630] rounded-md md:hidden ">
           <div

@@ -1,13 +1,12 @@
 import React from "react";
 
 import { motion } from "framer-motion";
-
 import "./Slider.css";
 function HomePage() {
   return (
-    <div className="h-[130vh] sm:h-screen pt-16 bg-custom-radial-gradient flex flex-col items-center ">
+    <div className="h-[130vh] sm:h-screen pt-16 bg-custom-radial-gradient flex flex-col items-center z-50">
       <div className="grid grid-cols-1 lg:grid-cols-12 sm:grid-cols-2 w-full px-4 py-20 lg:px-0 ">
-        <div className="lg:col-span-8 sm:col-span-1 flex flex-col justify-center items-start text-center  lg:text-left pt-10 lg:pt-0 lg:pl-24 pl-4 order-2  sm:order-1 md:order-1 lg:order-1 slide-in-bottom">
+        <div className="lg:col-span-8 sm:col-span-1 flex flex-col justify-center items-start text-center  lg:text-left pt-10 lg:pt-0 lg:pl-44 pl-4 order-2  sm:order-1 md:order-1 lg:order-1 slide-in-bottom z-50">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -28,8 +27,10 @@ function HomePage() {
             className="text-white text-[48px]"
             style={{ fontFamily: "Anton" }}
           >
-            This is <span className="text-pink-400">Yash Kelhe</span>, I'm a
-            <br /> Professional{" "}
+            This is <span className="text-pink-400 ">Yash Kelhe</span>
+            ,
+            <br />
+            I'm a Professional{" "}
             <span className="text-green-400">
               Software
               <br /> Developer
@@ -58,11 +59,21 @@ function HomePage() {
             </button>
           </div>
         </div>
-        <div className=" lg:col-span-3 sm:col-span-1  flex  justify-center items-center order-1  lg:order-2 md:order-2 sm:order-2 mt-8 lg:mt-0 slide-in-bottom ">
+        <div className=" lg:col-span-4 sm:col-span-1  flex  justify-center items-center order-1  lg:order-2 md:order-2 sm:order-2  lg:mt-0 slide-in-bottom relative max-w-xl  perspective-container z-10">
           <img
-            src="HomeImage.jpg"
+            src="image.png"
             alt="img"
-            className="w-96 h-80 slg:w-full rounded-md"
+            className="w-96 h-80 lg:w-full top-36 lg:top-32 rounded-md  absolute custom-transform border border-white/50 -z-10"
+          />
+          <img
+            src="BlogQuotes.png"
+            alt="img"
+            className="w-96 h-80 lg:w-full top-20 lg:top-24 rounded-md absolute custom-transform border border-white/50 -z-10"
+          />
+          <img
+            src="Real_estate.png"
+            alt="img"
+            className="w-96 h-80 lg:w-full lg:top-2 top-6  rounded-md custom-transform border border-white/50  -z-10 "
           />
         </div>
       </div>

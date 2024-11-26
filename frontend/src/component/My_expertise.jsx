@@ -21,8 +21,9 @@ function My_expertise() {
       className="bg-custom-radial-gradient flex flex-col h-[1100px] sm:h-[800px] sm:px-48 px-8   "
     >
       <div
-      style={{fontFamily:"Anton"}}
-      className="text-green-400 text-4xl mt-28 sm:mt-6   shadow-2xl w-52 shadow-indigo-500/50">
+        style={{ fontFamily: "Anton" }}
+        className="text-green-400 text-4xl mt-28 sm:mt-6   shadow-2xl w-52 shadow-indigo-500/50"
+      >
         MY Expertise
       </div>
       <motion.div
@@ -145,7 +146,7 @@ function My_expertise() {
               </svg>
             </>
           }
-          Title={" Version Control and Collaboration"}
+          Title={" Version Control "}
           skills={
             <>
               Proficient in version control using{" "}

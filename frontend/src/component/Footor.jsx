@@ -8,7 +8,7 @@ function Footor() {
           © 2023 . All Rights Reserved.
         </span>
         <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500  sm:mt-0">
-          <li>
+          {/* <li>
             <a class="hover:underline me-4 md:me-6">About</a>
           </li>
           <li>
@@ -19,7 +19,7 @@ function Footor() {
           </li>
           <li>
             <a class="hover:underline">Contact</a>
-          </li>
+          </li> */}
         </ul>
       </div>
     </footer>

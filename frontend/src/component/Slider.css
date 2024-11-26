@@ -7,6 +7,15 @@
   }
 }
 
+.perspective-container {
+  perspective: 1500px; /* Adds depth */
+}
+
+.custom-transform {
+  transform: rotateX(70deg) rotateY(40deg) rotateZ(-50deg); /* Adjust for inclination */
+  transform-style: preserve-3d; /* Ensures 3D effect is applied */
+}
+
 .animate-slide {
   display: flex;
   animation: slide 15s linear infinite;

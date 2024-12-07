@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import "./Slider.css";
 function HomePage() {
   return (
-    <div className="h-[130vh] sm:h-screen pt-16 bg-custom-radial-gradient flex flex-col items-center z-50 bottom-10">
+    <div className="h-auto sm:h-screen pt-12 bg-custom-radial-gradient flex flex-col items-center z-50 ">
       <div className="grid grid-cols-1 lg:grid-cols-12 sm:grid-cols-2 w-full px-4 py-20 lg:px-0 ">
         <div className="lg:col-span-8 sm:col-span-1 flex flex-col justify-center items-start text-center  lg:text-left pt-10 lg:pt-0 lg:pl-44 pl-4 order-2  sm:order-1 md:order-1 lg:order-1 slide-in-bottom z-50">
           <motion.div
@@ -20,11 +20,12 @@ function HomePage() {
               <span>---</span> Hello
             </div>
           </motion.div>
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-white text-[48px]"
+            className="text-white text-[48px] "
             style={{ fontFamily: "Anton" }}
           >
             This is <span className="text-pink-400 ">Yash Kelhe</span>

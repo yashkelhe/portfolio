@@ -3,7 +3,7 @@ import Box_project from "./Box_project";
 import { motion } from "framer-motion";
 function Project_section() {
   return (
-    <div className="max-h-screen w-screen sm:w-screen sm:h-screen bg-custom-radial-gradient sm:px-48 px-8   ">
+    <div className="h-auto w-screen sm:w-screen sm:h-screen bg-custom-radial-gradient sm:px-48 px-8   ">
       <div
         style={{ fontFamily: "Anton" }}
         className="text-green-400 text-3xl   shadow-indigo-500/50 "

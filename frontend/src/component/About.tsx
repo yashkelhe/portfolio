@@ -3,7 +3,7 @@ import { personalData } from "../../utils/data/personal-data";
 import { motion } from "framer-motion";
 function About() {
   return (
-    <div id="about" className="  bg-custom-radial-gradient p-12">
+    <div id="about" className=" relative bg-custom-radial-gradient p-12">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

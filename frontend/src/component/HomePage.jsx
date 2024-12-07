@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import "./Slider.css";
 function HomePage() {
   return (
-    <div className="h-[130vh] sm:h-screen pt-16 bg-custom-radial-gradient flex flex-col items-center z-50">
+    <div className="h-[130vh] sm:h-screen pt-16 bg-custom-radial-gradient flex flex-col items-center z-50 bottom-10">
       <div className="grid grid-cols-1 lg:grid-cols-12 sm:grid-cols-2 w-full px-4 py-20 lg:px-0 ">
         <div className="lg:col-span-8 sm:col-span-1 flex flex-col justify-center items-start text-center  lg:text-left pt-10 lg:pt-0 lg:pl-44 pl-4 order-2  sm:order-1 md:order-1 lg:order-1 slide-in-bottom z-50">
           <motion.div
@@ -59,21 +59,21 @@ function HomePage() {
             </button>
           </div>
         </div>
-        <div className=" lg:col-span-4 sm:col-span-1  flex  justify-center items-center order-1  lg:order-2 md:order-2 sm:order-2  lg:mt-0 slide-in-bottom relative max-w-xl  perspective-container z-10">
+        <div className=" lg:col-span-4 sm:col-span-1  flex  justify-center items-center order-1  lg:order-2 md:order-2 sm:order-2  lg:mt-0 slide-in-bottom relative max-w-xl  perspective-container z-10 ">
           <img
             src="image.png"
             alt="img"
-            className="w-96 h-80 lg:w-full top-36 lg:top-32 rounded-md  absolute custom-transform border border-white/50 -z-10"
+            className="w-96 h-80 lg:w-full top-36 lg:top-32 rounded-md shadow-2xl shadow-neutral-600 absolute custom-transform border border-white/50 -z-10 hover:scale-110 transition duration-500 hover:z-40"
           />
           <img
             src="BlogQuotes.png"
             alt="img"
-            className="w-96 h-80 lg:w-full top-20 lg:top-24 rounded-md absolute custom-transform border border-white/50 -z-10"
+            className="w-96 h-80 lg:w-full top-20 lg:top-24 rounded-md shadow-2xl shadow-neutral-600 absolute custom-transform border border-white/50 -z-10 hover:scale-110 transition duration-500 hover:z-40"
           />
           <img
             src="Real_estate.png"
             alt="img"
-            className="w-96 h-80 lg:w-full lg:top-2 top-6  rounded-md custom-transform border border-white/50  -z-10 "
+            className="w-96 h-80 lg:w-full lg:top-2 top-6  rounded-md shadow-2xl shadow-neutral-600 custom-transform border border-white/50  -z-10 hover:scale-110 transition duration-500 hover:z-40"
           />
         </div>
       </div>

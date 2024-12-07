@@ -3,7 +3,7 @@ import Box_project from "./Box_project";
 import { motion } from "framer-motion";
 function Project_section() {
   return (
-    <div className="h-[750px] w-screen sm:w-screen sm:h-screen bg-custom-radial-gradient sm:px-48 px-8  ">
+    <div className="max-h-screen w-screen sm:w-screen sm:h-screen bg-custom-radial-gradient sm:px-48 px-8   ">
       <div
         style={{ fontFamily: "Anton" }}
         className="text-green-400 text-3xl   shadow-indigo-500/50 "
@@ -14,7 +14,7 @@ function Project_section() {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.4 }}
-        className="sm:flex justify-around mt-20 gap-5"
+        className="sm:flex justify-around mt-20 gap-5 "
       >
         <Box_project
           title="BlogQuotes"

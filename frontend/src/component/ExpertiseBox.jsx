@@ -8,7 +8,7 @@ function ExpertiseBox({ Title, skills, image }) {
       animate={{ opacity: 1, scale: 1 }}
       whileInView={{ opacity: 1, scale: 1 }}
       transition={{ duration: 1, ease: "easeInOut" }}
-      className="col-span-4 sm:col-span-3 w-full h-80 shadow-lg shadow-indigo-500/50 p-5 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+      className="col-span-4 sm:col-span-3 w-full h-auto shadow-lg shadow-indigo-500/50 p-5 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
     >
       <div className="flex flex-col">
         <div>{image}</div>
